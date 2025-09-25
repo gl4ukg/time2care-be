@@ -20,6 +20,7 @@
     COPY .env ./
     # keep prisma schema/client for runtime if needed by migrate
     COPY prisma ./prisma
+    RUN mkdir -p /app/uploads && chown -R node:node /app
     USER node
     EXPOSE 3000
     # run migrations then start
