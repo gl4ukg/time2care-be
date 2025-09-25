@@ -19,7 +19,7 @@ services:
     restart: unless-stopped
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: 02ms1m@x! # same as in .env
+      POSTGRES_PASSWORD: H7w9Zf4uN6r5Q0x2L3m8Y1p
       POSTGRES_DB: time2caredb
     volumes:
       - postgres_data:/var/lib/postgresql/data
