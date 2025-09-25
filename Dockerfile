@@ -17,7 +17,6 @@
     COPY --from=build /app/dist ./dist
     COPY --from=build /app/node_modules ./node_modules
     COPY package*.json ./
-    COPY .env ./
     # keep prisma schema/client for runtime if needed by migrate
     COPY prisma ./prisma
     RUN mkdir -p /app/uploads && chown -R node:node /app
